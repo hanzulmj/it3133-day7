@@ -14,7 +14,8 @@ function App() {
       <h2>Hello React I'm parent</h2>
       <h3>Hello React I'm child</h3>
       <Childcompo setfun={recievedName}/>
-      <p>parent:My child said:{cname}</p>
+      <p>parent:My child </p>
+      <p>said:{cname}</p>
 
     </div>
   );
