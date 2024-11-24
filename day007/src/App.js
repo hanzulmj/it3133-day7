@@ -1,19 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
-import Childcom from './Childcom'
+import Childcom from './Childcompo'
+import Childcompo from './Childcompo';
 
 function App() {
-  const [childname,setChildname]=useState("Default")
-  const recieveName=(name)=>{
-    setChildname(name)
+  const [cname,setCname]=useState("Default")
+  const recievedName=(name)=>{
+    setCname(name)
   }
   return (
     <div className='App'>
       <h2>Hello React I'm parent</h2>
       <h3>Hello React I'm child</h3>
-      <Childcom setfun={recieveName}/>
-      <p>parent:My child said:{childname}</p>
+      <Childcompo setfun={recievedName}/>
+      <p>parent:My child said:{cname}</p>
 
     </div>
   );
