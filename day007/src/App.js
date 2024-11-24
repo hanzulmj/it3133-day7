@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
-import Childcom from './Childcompo'
+
 import Childcompo from './Childcompo';
 
 function App() {
